@@ -12277,7 +12277,7 @@ this.b=b},
 FZ:function FZ(){},
 GG:function GG(){},
 Ox:function Ox(){},
-anD(a,b,c,d,e,f,g,h,i,j){return new A.GY(c,i,g,j,b,f,a,d,e,h,null)},
+anD(a,b,c,d,e,f,g,h,i,j,k,l){return new A.GY(d,k,i,l,b,h,a,f,g,j,c,e,null)},
 adm(a,b){var s
 if(a==null)return B.S
 a.cM(b,!0)
@@ -12288,7 +12288,7 @@ a0O:function a0O(a,b){this.a=a
 this.b=b},
 GZ:function GZ(a,b){this.a=a
 this.b=b},
-GY:function GY(a,b,c,d,e,f,g,h,i,j,k){var _=this
+GY:function GY(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.c=a
 _.d=b
 _.e=c
@@ -12299,7 +12299,9 @@ _.CW=g
 _.cy=h
 _.fr=i
 _.k2=j
-_.a=k},
+_.ok=k
+_.p1=l
+_.a=m},
 a0P:function a0P(a){this.a=a},
 Ov:function Ov(a,b,c,d){var _=this
 _.a=a
@@ -42995,7 +42997,7 @@ m=A.eX(m==null?"???":m,q,q,q)
 s=o.f
 s=A.eX(s==null?"curency name":s,q,q,q)
 r=A.eX("FB: "+A.f(o.r)+" FS: "+A.f(o.w),q,q,q)
-return A.Gb(q,new A.DL(A.anD(q,q,m,q,n,B.JL,r,q,s,n?B.EJ:q),q),B.aH,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a2f(p,o,a),q,q,q,q,q,q)},
+return A.Gb(q,new A.DL(A.anD(q,q,q,m,q,q,n,B.JL,r,q,s,n?B.EJ:q),q),B.aH,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,new A.a2f(p,o,a),q,q,q,q,q,q)},
 $S:376}
 A.a2f.prototype={
 $0(){var s,r,q,p=null,o=this.b,n=A.a([A.aiU(A.eX(A.f(o.c)+" - "+A.f(o.f),p,p,p),new A.a2e(this.a,o)),A.eX("Forex Buying: "+A.f(o.r),p,p,p),A.eX("Forex Selling: "+A.f(o.w),p,p,p),A.eX("Banknote Buying: "+A.f(o.x),p,p,p),A.eX("Banknote Selling: "+A.f(o.y),p,p,p)],t.E),m=o.z,l=m!=null,k=!l||m===null
@@ -43039,12 +43041,12 @@ r=A.N(B.d.aq(25.5),63,81,181)
 q=n.f
 if(q===1)q=A.ajF(s.c+B.e.j(s.a),60,60)
 else if(q<=3)q=A.ajF(s.c+B.e.j(s.a),40,40)
-else q=q<=4?A.ajF(s.c+B.e.j(s.a),20,20):o
+else q=q<=4?A.ajF(s.c+B.e.j(s.a),30,30):o
 p=A.eX(B.e.j(s.a),o,o,o)
 n=n.f
 if(n<=2)n=A.eX(J.dT(s.b),o,o,B.Qe)
 else n=n<=4?A.eX(s.c,o,o,B.Qf):o
-return new A.e0(B.e2,A.anD(new A.bb(6,6,6,6),!0,q,new A.a2h(),!1,o,n,r,p,o),o)},
+return new A.e0(B.e2,A.anD(new A.bb(4,4,4,4),!0,10,q,4,new A.a2h(),!1,o,n,r,p,o),o)},
 $S:377}
 A.a2h.prototype={
 $0(){},
@@ -48380,9 +48382,11 @@ m=h.Q
 if(m==null){m=s.gfh().Q
 m.toString}a3=f==null?a8:f.Q
 if(a3==null){a3=s.gl4().Q
-a3.toString}a4=b0.as
+a3.toString}a4=a7.ok
+if(a4==null)a4=b0.as
 if(a4==null)a4=16
-a5=b0.at
+a5=a7.p1
+if(a5==null)a5=b0.at
 if(a5==null){a5=s.at
 a5.toString}a6=b0.ax
 if(a6==null){a6=s.ax
